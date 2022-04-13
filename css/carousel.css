@@ -1,0 +1,126 @@
+.vertical .carousel-inner {
+    height: 100%;
+}
+
+.carousel{
+    width: 450px;
+    height: 70px;
+}
+
+.carousel2{
+    width: 600px;
+}
+
+.carousel3 {
+    width: 600px;
+}
+
+
+.carousel1-item{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.carousel.vertical .carousel-item,
+.carousel2.vertical .carousel-item {
+    -webkit-transition: 1s ease-in-out top;
+    -moz-transition: 1s ease-in-out top;
+    -ms-transition: 1s ease-in-out top;
+    -o-transition: 1s ease-in-out top;
+    transition: 1s ease-in-out top;
+}
+
+.carousel.vertical .active,
+.carousel2.vertical .active {
+    top: 0;
+}
+
+.carousel.vertical .carousel-item-next,
+.carousel2.vertical .carousel-item-next {
+    top: 100px;
+}
+
+.carousel.vertical .carousel-item-prev,
+.carousel2.vertical .carousel-item-prev {
+    top: -100px;
+}
+
+.carousel.vertical .carousel-item-next.carousel-item-left,
+.carousel.vertical .carousel-item-prev.carousel-item-right,
+.carousel2.vertical .carousel-item-next.carousel-item-left,
+.carousel2.vertical .carousel-item-prev.carousel-item-right{
+    top: 0;
+}
+
+.carousel.vertical .active.carousel-item-left,
+.carousel2.vertical .active.carousel-item-left {
+    top: -100px;
+    transform: translateY(0);
+}
+
+/**/
+
+.carousel2.vertical .active.carousel-item-right {
+    top: 100px;
+    left: 100px;
+    transition: all 1s ease-in-out;
+}
+
+.carousel2.vertical .carousel-item-next.carousel-item-left,
+.carousel2.vertical .carousel-item-prev.carousel-item-right{
+    top: 0;
+    /*right: 0;*/
+    /*transition: all 1s ease-in-out;*/
+}
+
+.carousel2.vertical .active.carousel-item-left {
+    top: -100px;
+    left: -100px;
+    transition: all 1s ease-in-out;
+}
+/**/
+
+.carousel.vertical .active.carousel-item-right,
+.carousel2.vertical .active.carousel-item-right {
+    top: 100px;
+    transform: translateY(0);
+}
+
+.carousel.vertical .carousel-item,
+.carousel2.vertical .carousel-item {
+    left: 0;
+}
+
+
+
+@media screen and (max-width: 1770px) {
+    .carousel {
+        width: 300px;
+        height: 55px;
+    }
+
+    .carousel2{
+        width: 500px;
+    }
+
+    .carousel3 {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .carousel {
+        width: 250px;
+        height: 45px;
+    }
+
+    .carousel2{
+        width: 350px;
+    }
+
+    .carousel3 {
+        width: 350px;
+    }
+
+}
