@@ -9,7 +9,11 @@ const updateTime = () => {
 // Получение данных о курсе валют
 const getCurrency = async (currency) => {
     const currentDate = new Date().toISOString().split('T')[0];
-    return await fetch(`https://alif.tj/api/currency/index.php?currency=${currency}&date=${currentDate}`)
+    return await fetch(
+        `https://alif.tj/api/currency/index.php?currency=${currency}&date=${currentDate}`,
+         {
+            mode: 'cors'
+        })
         .then(async (response) => {
             const data = await response.json();
             setCurrency(data, currency);
