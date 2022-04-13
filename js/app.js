@@ -57,18 +57,13 @@ currency.forEach(getCurrency);
 // Обновление курсов
 setInterval(() => {
     currency.forEach(getCurrency);
-}, 7000);
+}, 600000);
 
 // Обновление времени
 setInterval(updateTime, 1000);
 
 //Интервалы для анимации
 $('.carousel').carousel({
-    interval: 7000
-});
-$('.carousel2').carousel({
-    interval: 7000
-});
-$('.carousel3').carousel({
-    interval: 7000
+    interval: 7000,
+    pause: "false"
 });
