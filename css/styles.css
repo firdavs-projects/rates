@@ -83,13 +83,13 @@ body {
 }
 
 .up {
-    background: url(../img/up.svg) no-repeat 188px center;
+    background: url(img/up.svg) no-repeat 188px center;
     background-size: 40px 40px;
     padding-right: 50px;
 }
 
 .down {
-    background: url(../img/down.svg) no-repeat 188px center;
+    background: url(img/down.svg) no-repeat 188px center;
     background-size: 40px 40px;
     padding-right: 50px;
 }
