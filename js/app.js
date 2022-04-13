@@ -52,7 +52,13 @@ const setCurrency = (data, currency) => {
 
 //Интервалы для анимации
 $('.carousel').carousel({
-    interval: 5000
+    interval: 7000
+});
+$('.carousel2').carousel({
+    interval: 7000
+});
+$('.carousel3').carousel({
+    interval: 7000
 });
 
 // Первый запрос
@@ -62,7 +68,7 @@ currency.forEach(getCurrency);
 // Обновление курсов
 setInterval(() => {
     currency.forEach(getCurrency);
-}, 10000);
+}, 100000);
 
 // Обновление времени
 setInterval(updateTime, 1000);

@@ -222,13 +222,13 @@ body {
     }
 
     .up {
-        background: url(../img/up.svg) no-repeat 150px center;
+        background: url(img/up.svg) no-repeat 150px center;
         background-size: 35px 35px;
         padding-right: 40px;
     }
 
     .down {
-        background: url(../img/down.svg) no-repeat 150px center;
+        background: url(img/down.svg) no-repeat 150px center;
         background-size: 35px 35px;
         padding-right: 40px;
     }
@@ -313,13 +313,13 @@ body {
     }
 
     .up {
-        background: url(../img/up.svg) no-repeat 120px center;
+        background: url(img/up.svg) no-repeat 120px center;
         background-size: 30px 30px;
         padding-right: 30px;
     }
 
     .down {
-        background: url(../img/down.svg) no-repeat 120px center;
+        background: url(img/down.svg) no-repeat 120px center;
         background-size: 30px 30px;
         padding-right: 30px;
     }
