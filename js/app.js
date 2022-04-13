@@ -50,6 +50,18 @@ const setCurrency = (data, currency) => {
     prev[currency] = data;
 }
 
+// Первый запрос
+const currency = ['usd', 'eur', 'rub'];
+currency.forEach(getCurrency);
+
+// Обновление курсов
+setInterval(() => {
+    currency.forEach(getCurrency);
+}, 7000);
+
+// Обновление времени
+setInterval(updateTime, 1000);
+
 //Интервалы для анимации
 $('.carousel').carousel({
     interval: 7000
@@ -60,15 +72,3 @@ $('.carousel2').carousel({
 $('.carousel3').carousel({
     interval: 7000
 });
-
-// Первый запрос
-const currency = ['usd', 'eur', 'rub'];
-currency.forEach(getCurrency);
-
-// Обновление курсов
-setInterval(() => {
-    currency.forEach(getCurrency);
-}, 100000);
-
-// Обновление времени
-setInterval(updateTime, 1000);
