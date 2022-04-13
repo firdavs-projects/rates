@@ -61,13 +61,3 @@ setInterval(() => {
 
 // Обновление времени
 setInterval(updateTime, 1000);
-
-//Интервалы для анимации
-
-setTimeout(() => {
-    $('.carousel').carousel({
-        interval: 6000,
-        pause: "false"
-    });
-}, 3000);
-
