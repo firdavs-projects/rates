@@ -8,7 +8,16 @@ const updateTime = () => {
 
 // Получение данных о курсе валют
 const getCurrency = async (currency) => {
+    const prevDate = new Date(Date.now()-8.64e+7).toISOString().split('T')[0];
     const currentDate = new Date().toISOString().split('T')[0];
+    await fetch(
+        `https://alif.tj/api/currency/index.php?currency=${currency}&date=${prevDate}`,
+        {
+            mode: 'cors'
+        })
+        .then(async (response) => {
+            prev[currency] = await response.json();
+        });
     return await fetch(
         `https://alif.tj/api/currency/index.php?currency=${currency}&date=${currentDate}`,
          {
@@ -51,7 +60,7 @@ const setCurrency = (data, currency) => {
     $(`#${currency}BuyIntiqol`).html(data.money_transfer_buy_value).addClass(setArrows(prev, data, currency, 'money_transfer_buy_value'));
     $(`#${currency}SellIntiqol`).html(data.money_transfer_trade_value).addClass(setArrows(prev, data, currency, 'money_transfer_trade_value'));
     $(`#${currency}Bmt`).html(data.nbt_value).addClass(setArrows(prev, data, currency, 'nbt_value'));
-    prev[currency] = data;
+    // prev[currency] = data;
 }
 
 // Первый запрос

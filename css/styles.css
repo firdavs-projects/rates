@@ -412,8 +412,8 @@ body {
     }
 
     .rates span {
-        width: 100px;
-        height: 30px;
+        width: 120px;
+        height: 50px;
     }
 
 
@@ -422,14 +422,14 @@ body {
     }
 
     .up {
-        background: url(../img/up.svg) no-repeat 70px center;
-        background-size: 20px 20px;
+        background: url(../img/up.svg) no-repeat 76px 20px;
+        background-size: 18px 18px;
         padding-right: 20px;
     }
 
     .down {
-        background: url(../img/down.svg) no-repeat 70px center;
-        background-size: 20px 20px;
+        background: url(../img/down.svg) no-repeat 76px 20px;
+        background-size: 18px 18px;
         padding-right: 20px;
     }
 }
