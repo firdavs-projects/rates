@@ -98,11 +98,11 @@
     }
 
     .carousel2{
-        width: 500px;
+        width: 520px;
     }
 
     .carousel3 {
-        width: 500px;
+        width: 520px;
     }
 
 }
@@ -114,26 +114,27 @@
     }
 
     .carousel2{
-        width: 350px;
+        width: 370px;
     }
 
     .carousel3 {
-        width: 350px;
+        width: 370px;
     }
 
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1048px) {
     .carousel {
-        width: 130px;
-        height: 42px;
+        width: 150px;
+        height: 38px;
+        margin-top: 12px;
     }
 
     .carousel2{
-        width: 240px;
+        width: 250px;
     }
 
     .carousel3 {
-        width: 240px;
+        width: 250px;
     }
 }

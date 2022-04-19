@@ -5,7 +5,7 @@ body {
 }
 
 .container{
-    max-width: 1702px;
+    max-width: calc(100% - 50px);
     margin: auto;
     padding: 0 15px;
     display: flex;
@@ -71,6 +71,15 @@ body {
     border: 1px solid #FFFFFF;
     border-radius: 14px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    height: 70vh;
+}
+
+.card-title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*align-items: s;*/
 }
 
 .titles {
@@ -155,7 +164,7 @@ body {
 @media screen and (max-width: 1800px) {
 
     .container{
-        max-width: 1400px;
+        max-width: calc(100% - 50px);
         /*margin: 80px auto;*/
         padding: 0 20px;
     }
@@ -246,7 +255,7 @@ body {
 @media screen and (max-width: 1365px) {
 
     .container{
-        max-width: 1100px;
+        max-width: calc(100% - 50px);
         /*margin: 50px auto;*/
         padding: 0 15px;
     }
@@ -259,7 +268,7 @@ body {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 35px;
+        font-size: 37px;
         line-height: 45px;
         text-align: center;
         margin: 0 50px 20px;
@@ -272,7 +281,7 @@ body {
     }
 
     .date {
-        font-size: 32px;
+        font-size: 34px;
         line-height: 40px;
     }
 
@@ -287,12 +296,12 @@ body {
     }
 
     .titles{
-        font-size: 26px;
+        font-size: 28px;
         margin-bottom: 55px;
     }
 
     .rate{
-        font-size: 30px;
+        font-size: 32px;
         line-height: 33px;
     }
 
@@ -307,7 +316,7 @@ body {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 28px;
+        font-size: 30px;
         line-height: 33px;
     }
 
@@ -317,7 +326,7 @@ body {
 
 
     .carousel3 .rates{
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .up {
@@ -334,10 +343,10 @@ body {
 
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1048px) {
 
     .container{
-        max-width: 800px;
+        max-width: calc(100% - 40px);
         margin: auto;
         padding: 0 8px;
         display: flex;
@@ -355,8 +364,8 @@ body {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 25px;
-        line-height: 25px;
+        font-size: 26px;
+        line-height: 26px;
         text-align: center;
         margin: 0 50px 20px;
         flex-direction: column;
@@ -369,7 +378,7 @@ body {
     }
 
     .date {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 20px;
     }
 
@@ -386,13 +395,13 @@ body {
     }
 
     .titles{
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: 35px;
     }
 
     .rate{
         margin-top: auto;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 23px;
     }
 
@@ -407,7 +416,7 @@ body {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 19px;
         line-height: 23px;
     }
 
@@ -418,7 +427,7 @@ body {
 
 
     .carousel3 .rates{
-        font-size: 20px;
+        font-size: 21px;
     }
 
     .up {
