@@ -11,18 +11,14 @@ const getCurrency = async (currency) => {
     const prevDate = new Date(Date.now()-8.64e+7).toISOString().split('T')[0];
     const currentDate = new Date().toISOString().split('T')[0];
     await fetch(
-        `https://alif.tj/api/currency/index.php?currency=${currency}&date=${prevDate}`,
-        {
-            mode: 'cors'
-        })
+        // `https://alif.tj/api/currency/index.php?currency=${currency}&date=${prevDate}`,
+        `https://core2api.alif.tj/api/v1/currency/${currency}/${prevDate}`)
         .then(async (response) => {
             prev[currency] = await response.json();
         });
     return await fetch(
-        `https://alif.tj/api/currency/index.php?currency=${currency}&date=${currentDate}`,
-         {
-            mode: 'cors'
-        })
+        // `https://alif.tj/api/currency/index.php?currency=${currency}&date=${currentDate}`,
+        `https://core2api.alif.tj/api/v1/currency/${currency}/${currentDate}`)
         .then(async (response) => {
             const data = await response.json();
             setCurrency(data, currency);
